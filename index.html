@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/vishnu.jpg?v=2" alt="Sankuri Vishnu" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sankuri Vishnu">Sankuri Vishnu</h1>
+
+          <p class="title">Game Designer 🎮 🚀</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sankurivishnu@gmail.com" class="contact-link">sankurivishnu@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+916304259102" class="contact-link">+91 6304259102</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-01-20">Jan 20, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Parul University, Gujarat, INDIA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://medium.com/@samithkumar2004" class="social-link" target="_blank">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/Vishnuu1531" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vishnu-sankuri-11331a373/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link="about" type="button">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume" type="button">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="portfolio" type="button">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="blog" type="button">Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact" type="button">Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Creative and passionate Game Designer with strong interest in designing engaging gameplay, progression
+            systems,
+            and interactive player experiences. Skilled in gameplay analysis, Game Design Document (GDD) creation, core
+            loop design, game economy balancing, monetization systems, player retention strategies, and UI/UX for games.
+          </p>
+          <p>
+            Experienced in analyzing successful game mechanics and creating structured design solutions to improve
+            engagement
+            and user experience. Passionate about building innovative and enjoyable gaming experiences while
+            continuously
+            learning modern game development tools and industry trends.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/game-development.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Design</h4>
+
+                <p class="service-item-text">
+                  Expertise in designing engaging and immersive gameplay experiences that captivate players and drive
+                  retention.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/pdf.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Design Documentation (GDDs)</h4>
+
+                <p class="service-item-text">
+                  Crafting comprehensive and structured GDDs that outline game mechanics, features, and user flow for
+                  seamless development.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/concept.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Playable Ads & Ad Script Writing</h4>
+
+                <p class="service-item-text">
+                  Creating interactive playable ads and compelling ad scripts to maximize user acquisition and
+                  engagement.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/cost-per-click.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Economy & Monetization</h4>
+
+                <p class="service-item-text">
+                  Designing balanced in-game economies and monetization strategies, including in-app purchases, ads, and
+                  progression systems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ui.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX for Games</h4>
+
+                <p class="service-item-text">
+                  Developing intuitive and visually appealing game interfaces that enhance user experience and
+                  accessibility.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/games.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Game Development </h4>
+
+                <p class="service-item-text">
+                  In-depth knowledge of mobile gaming trends, mechanics, and optimization for iOS and Android platforms.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/business-idea.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Creative Strategy for Ads</h4>
+
+                <p class="service-item-text">
+                  Crafting high-impact ad campaigns, including video scripts and interactive content, to boost
+                  conversions and player engagement.
+                </p>
+              </div>
+
+            </li>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/connection.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cross-Functional Team Coordination</h4>
+
+                <p class="service-item-text">
+                  Effectively collaborating with developers, artists, and marketers to ensure smooth project execution
+                  and timely delivery.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/search.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Market Research & Competitor Analysis</h4>
+
+                <p class="service-item-text">
+                  Conducting in-depth analysis of market trends and competitors to refine game strategies and improve
+                  player retention.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/game.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Idle & Tycoon Game Mechanics</h4>
+
+                <p class="service-item-text">
+                  Effectively collaborating with developers, artists, and marketers to ensure smooth project execution
+                  and timely delivery.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://ruralgames.online" target="_blank" title="Rural Games Studio">
+                <img src="./assets/images/rural_games.png" alt="Rural Games Studio"
+                  style="max-height: 95px; width: auto; object-fit: contain; filter: none; border-radius: 12px;">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Parul University, Gujarat 👨🏼‍🎓</h4>
+
+              <span>📅 2023 – 2027 | CGPA: 7.09</span>
+
+              <p class="timeline-text">
+                Bachelor of Technology in Computer Science. Pursuing comprehensive studies in computer science, software
+                development,
+                game design concepts, and interactive system mechanics.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SR Education</h4>
+
+              <span>📅 2021 – 2023 | 67%</span>
+
+              <p class="timeline-text">
+                Higher Secondary Education. Built strong analytical, logical, and computational problem-solving
+                foundations.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SR Prime</h4>
+
+              <span>📅 2020 – 2021 | 100%</span>
+
+              <p class="timeline-text">
+                Secondary Education. Completed secondary schooling with top academic performance.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Game Design Intern</h4>
+
+              <span>📅 June 2026 – August 2026</span>
+
+              <p class="timeline-text">
+                Designed and developed levels, puzzles, clues, and gameplay flows for Platform 13, a psychological horror game.
+                Worked on creating immersive puzzle mechanics, connecting clues with the game’s narrative, designing exploration
+                sequences, and improving the overall player experience through engaging level progression and storytelling.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game Design (GDD, Gameplay Analysis, Economy, UI/UX)</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game Tools (Unity, Unreal Engine, Figma, Notion)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming (C, C++, Python)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Technologies (HTML, CSS)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Databases (MySQL, MongoDB)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tools (Git, VS Code)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>GDD's</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Gameplay Analysis</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Level Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI & ML</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>GDD's</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Gameplay Analysis</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Level Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI & ML</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="gdd's">
+              <a href="https://drive.google.com/file/d/150GsXEEqh8IDQbJnOI-HkCSyY8cDVYOA/view?usp=sharing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/platform13.png" alt="Platform 13" loading="lazy">
+                </figure>
+                <h3 class="project-title">Platform 13</h3>
+                <p class="project-category">GDD & Level Design</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="gameplay analysis">
+              <a href="https://drive.google.com/file/d/1tM3CMtgjpDCvKQ0LTT2Y57AL_dEGmahI/view?usp=sharing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/mob_control.png" alt="Mob Control" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mob Control</h3>
+                <p class="project-category">Gameplay Analysis</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="gdd's">
+              <a href="https://drive.google.com/file/d/1YAYPgaspwuhjwMc01DmnnIuX4oOAvVs-/view?usp=drive_link" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/hill_climb_space.png" alt="Hill Climb Infinity: Space Rush" loading="lazy">
+                </figure>
+                <h3 class="project-title">Hill Climb Infinity: Space Rush</h3>
+                <p class="project-category">GDD</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="level design">
+              <a href="https://drive.google.com/file/d/1qRYJjXhugS9LiZX9s_dGd2m3xxHsqYyy/view?usp=drive_link" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/color_home_queue.png" alt="Color Home Queue" loading="lazy">
+                </figure>
+                <h3 class="project-title">Color Home Queue</h3>
+                <p class="project-category">Level Design & Ideation</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai & ml">
+              <a href="#" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/fake_profile_detection.png" alt="Fake Profile Detection" loading="lazy">
+                </figure>
+                <h3 class="project-title">Fake Profile Detection</h3>
+                <p class="project-category">Python AI / ML</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="gdd's">
+              <a href="https://docs.google.com/document/d/1DUS7Aymuk4cfXBgimNDZFnwVbjYG1LmnXRIkHbw93qU/edit?usp=sharing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/deep_space_mining.png" alt="Deep Space Mining Expedition" loading="lazy">
+                </figure>
+                <h3 class="project-title">Deep Space Mining Expedition</h3>
+                <p class="project-category">GDD & System Design</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="level design">
+              <a href="https://drive.google.com/file/d/1RStLWmOg35iojBmpuq1j_pDmSAqbOMaX/view?usp=drive_link" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/temple_run_holi.png" alt="Temple Run: Holi Theme" loading="lazy">
+                </figure>
+                <h3 class="project-title">Temple Run: Holi Theme</h3>
+                <p class="project-category">GDD & Level Design</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Medium Posts</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@samithkumar2004/outlets-rush-game-design-breakdown-a17853c63ff8">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Outlet rush.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dec 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Outlets Rush — Game Design Breakdown!</h3>
+
+                  <p class="blog-text">
+                    Outlets Rush — Game Design Breakdown! A deep dive into its mechanics, monetization, and player
+                    engagement strategies.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://medium.com/@samithkumar2004/bgmi-game-design-breakdown-for-the-first-3-hours-of-gameplay-2b5bee552e38">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Pub g.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Game Play</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">BGMI</h3>
+
+                  <p class="blog-text">
+                    BGMI Game design breakdown for the first 3 hours of gameplay!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@samithkumar2004/game-design-document-gdd-dda23ca81ed1">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Game Series.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 2, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Game Design Document (GDD)</h3>
+
+                  <p class="blog-text">
+                    Creating a Game Design Document (GDD) for a game. — Game Series
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://medium.com/@samithkumar2004/clash-of-clans-gold-pass-breakdown-and-design-goals-e736dfdad906">
+
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/clash of clans.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 3, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Clash of Clans</h3>
+
+                  <p class="blog-text">
+                    Clash of Clans' Gold Pass boosts engagement, balances rewards, and drives monetization. Discover its
+                    design strategy!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://medium.com/@samithkumar2004/gamedev-protips-two-core-principles-of-success-for-game-designers-707365ee5f40">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/GameDev Protios.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 05, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Success For Game Designers</h3>
+
+                  <p class="blog-text">
+                    Two Core Principles Of Success For Game Designers
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://medium.com/@samithkumar2004/core-principles-for-crafting-low-level-game-design-documentation-️-ce5e334d1daa">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Level Game Design.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Principles for Crafting</h3>
+
+                  <p class="blog-text">
+                    Core Principles for Crafting Low-Level Game Design Documentation🗡️
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29275.170242403055!2d72.50412375894874!3d23.020071899201554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84d24b890f21%3A0x41346d002b3c3fab!2sAhmedabad%2C%20Gujarat%20380015!5e0!3m2!1sen!2sin!4v1738437273209!5m2!1sen!2sin"
+              width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js?v=20260811"></script>
+  <script>
+    // Inline navigation handler fallback to guarantee tab switching
+    document.addEventListener("click", function (e) {
+      const btn = e.target.closest("[data-nav-link]");
+      if (!btn) return;
+      e.preventDefault();
+      const target = (btn.getAttribute("data-nav-link") || btn.innerText).trim().toLowerCase();
+      document.querySelectorAll("[data-page]").forEach(function (page) {
+        if (page.dataset.page === target) {
+          page.classList.add("active");
+        } else {
+          page.classList.remove("active");
+        }
+      });
+      document.querySelectorAll("[data-nav-link]").forEach(function (link) {
+        const linkTarget = (link.getAttribute("data-nav-link") || link.innerText).trim().toLowerCase();
+        if (linkTarget === target) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+      window.scrollTo(0, 0);
+    });
+  </script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
