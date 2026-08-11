@@ -147,7 +147,9 @@ if (form) {
         name: name,
         email: email,
         message: message,
-        _subject: `New Portfolio Message from ${name}`
+        _subject: `New Portfolio Message from ${name}`,
+        _captcha: "false",
+        _template: "table"
       })
     })
       .then(response => response.json())
