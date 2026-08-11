@@ -117,6 +117,34 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// contact form submission handler
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const fullNameInput = form.querySelector('[name="fullname"]');
+    const emailInput = form.querySelector('[name="email"]');
+    const messageInput = form.querySelector('[name="message"]');
+
+    const name = fullNameInput ? fullNameInput.value.trim() : "";
+    const email = emailInput ? emailInput.value.trim() : "";
+    const message = messageInput ? messageInput.value.trim() : "";
+
+    const mailtoUrl = `mailto:sankurivishnu@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage:%0A${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoUrl;
+
+    const responseMsg = form.querySelector(".form-response-msg");
+    if (responseMsg) {
+      responseMsg.style.display = "block";
+      responseMsg.innerText = `Thank you, ${name}! Opening your email client to send message to sankurivishnu@gmail.com.`;
+    }
+
+    form.reset();
+    if (formBtn) formBtn.setAttribute("disabled", "");
+  });
+}
+
 // Global Event Delegation for Page Navigation
 document.addEventListener("click", function (e) {
   const navBtn = e.target.closest("[data-nav-link]");
