@@ -125,23 +125,57 @@ if (form) {
     const fullNameInput = form.querySelector('[name="fullname"]');
     const emailInput = form.querySelector('[name="email"]');
     const messageInput = form.querySelector('[name="message"]');
+    const responseMsg = form.querySelector(".form-response-msg");
 
     const name = fullNameInput ? fullNameInput.value.trim() : "";
     const email = emailInput ? emailInput.value.trim() : "";
     const message = messageInput ? messageInput.value.trim() : "";
 
-    const mailtoUrl = `mailto:sankurivishnu@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage:%0A${encodeURIComponent(message)}`;
-
-    window.location.href = mailtoUrl;
-
-    const responseMsg = form.querySelector(".form-response-msg");
-    if (responseMsg) {
-      responseMsg.style.display = "block";
-      responseMsg.innerText = `Thank you, ${name}! Opening your email client to send message to sankurivishnu@gmail.com.`;
+    if (formBtn) {
+      formBtn.setAttribute("disabled", "");
+      const btnSpan = formBtn.querySelector("span");
+      if (btnSpan) btnSpan.innerText = "Sending...";
     }
 
-    form.reset();
-    if (formBtn) formBtn.setAttribute("disabled", "");
+    fetch("https://formsubmit.co/ajax/sankurivishnu@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message,
+        _subject: `New Portfolio Message from ${name}`
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (responseMsg) {
+          responseMsg.style.display = "block";
+          responseMsg.style.color = "#ffdb70";
+          responseMsg.innerText = `Thank you, ${name}! Your message has been sent successfully to sankurivishnu@gmail.com.`;
+        }
+        form.reset();
+        if (formBtn) {
+          const btnSpan = formBtn.querySelector("span");
+          if (btnSpan) btnSpan.innerText = "Send Message";
+          formBtn.setAttribute("disabled", "");
+        }
+      })
+      .catch(error => {
+        if (responseMsg) {
+          responseMsg.style.display = "block";
+          responseMsg.style.color = "#ff6b6b";
+          responseMsg.innerText = "Oops! Something went wrong. Please try again or email directly to sankurivishnu@gmail.com.";
+        }
+        if (formBtn) {
+          const btnSpan = formBtn.querySelector("span");
+          if (btnSpan) btnSpan.innerText = "Send Message";
+          formBtn.removeAttribute("disabled");
+        }
+      });
   });
 }
 
